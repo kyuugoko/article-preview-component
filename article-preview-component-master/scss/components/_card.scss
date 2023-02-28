@@ -1,0 +1,110 @@
+.card{
+
+    position: relative;
+    border-radius: 0 0 8px 8px;
+
+    &__heading, &__description, &__footer {
+        padding: 0 2rem;
+    }
+
+    &__heading {
+        font-size: 17px;
+        margin-bottom: 1rem;
+        margin-top: 2.2rem;
+        line-height: 1.5;
+    }
+
+    &__description {
+        word-spacing: 1.2px;
+        color: $Desaturated-Dark-Blue;
+        margin-bottom: 1.1rem;
+    }
+
+    &__footer {
+        display: flex;
+        padding:1.1rem 2rem 1.1rem;
+        align-items: center;
+        justify-content: space-between;
+        transition: all ease-in-out 0.3s;
+        
+        &_author {
+            display: flex;
+
+            &_img {
+                border-radius: 50%;
+                width: 2.5rem;
+                height: 2.5rem;
+                margin-right: 1rem;
+            }
+
+            &_details {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &_name {
+                font-weight: 700;
+            }
+        }
+
+        &_date {
+            color: $Grayish-Blue;
+        }
+
+    }
+
+    &__social_drawer {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+    }
+}
+
+.active {
+    background-color: $Very-Dark-Grayish-Blue;
+    padding-bottom: 24.6px;
+    align-items: center;
+    border-radius: 0 0 8px 8px;
+}
+
+.disabled {
+    display: none;
+}
+
+.share_text {
+    color: $Grayish-Blue;
+    letter-spacing: 0.3rem;
+}
+
+@media (min-width: 775px){
+    .active {
+        background-color: rgba(255, 255, 255, 0);
+        padding-bottom: 1.1rem;
+    }
+
+    .card__footer_author.disabled {
+        display: flex;
+    }
+
+    .card__share {
+    padding: 22px 37px;
+    position: absolute;
+    bottom: 94px;
+    right: -78px;
+    background-color: $Very-Dark-Grayish-Blue;
+    border-radius: 1rem;
+    transition: all ease-in-out 0.3s;
+    
+    
+        &::after{
+            content: ' ';
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            background-color: $Very-Dark-Grayish-Blue;
+            right: 118px;
+            bottom: -10px;
+            transform: rotate(-45deg);
+        }
+    }
+}
