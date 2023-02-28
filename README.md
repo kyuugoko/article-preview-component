@@ -54,7 +54,7 @@ The way the ```window```target works and how the ```DOMCOntentnLoaded``` event f
 
 `window.addEventListener('DOMContentLoaded', () => {
     classSwitch()
-})`
+}=`
 
 
 ### Continued development
