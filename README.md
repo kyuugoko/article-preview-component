@@ -33,8 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://https://github.com/kyuugoko/article-preview-component)
-- Live Site URL: [Add live site URL here](https://sage-alfajores-0596e7.netlify.app)
+[Live Site URL](https://sage-alfajores-0596e7.netlify.app)
 
 
 
