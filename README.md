@@ -52,9 +52,9 @@ Users should be able to:
 
 The way the ```window```target works and how the ```DOMCOntentnLoaded``` event fires everything cleanly became a must for this challenge. Didn't know about them but it really helped sorting the way how the toggles in my JS file were firing immediately upon going live.
 
-```window.addEventListener('DOMContentLoaded', () => {
+`window.addEventListener('DOMContentLoaded', () => {
     classSwitch()
-})
+})`
 
 
 ### Continued development
